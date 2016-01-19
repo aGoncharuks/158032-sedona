@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Aleksandrs Goncaruks](https://htmlacademy.ru/profile/id158032).
-* Наставник: `Виктор Капцов`.
+* Наставник: [Виктор Капцов](https://htmlacademy.ru/profile/id34390).
 
 ---
 
