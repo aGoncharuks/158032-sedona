@@ -8,11 +8,13 @@
   <body>
     <header class="main-header">
       <div class="container">
+        <div class="index-logo">
+          <img src="http://placehold.it/140x70" alt="Sedona logo">
+        </div>
         <nav class="main-menu">
           <ul>
             <li><a href="#">Информация</a></li>
             <li><a href="#">Фото и видео</a></li>
-            <li class="index-logo"><img src="http://placehold.it/140x70" alt="Sedona logo"></li>
             <li><a href="#">Карта штата</a></li>
             <li><a href="#">Гостиницы</a></li>
           </ul>
@@ -20,76 +22,79 @@
       </div>
     </header>
     <main class="container">
-      <div class="intro">
-        <p class="welcome"></p>
-        <p class="gorgeous"></p>
-        <p class="sedona"></p>
-        <p class="grand-canyon"></p>
-        <p class="deserves-more"></p>
-        <p class="5-reasons"></p>
+      <div class="banner">
+        <img src="" alt="Sedona banner" />
       </div>
-      <div class="index-content">
-        <section class="fact left">
-          <h2>Настоящий городок</h2>
-          <span>№1</span>
-          <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
-        </section>
-        <figure class="photo-1"><img src="http://placehold.it/800x260" alt="City photo"></figure>
-      </div>
-      <div class="index-content">
-        <section class="info housing">
-          <h2>Жилье</h2>
-          <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-        </section>
-        <section class="info food">
-          <h2>Еда</h2>
-          <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-        </section>
-        <section class="info souvenirs">
-          <h2>Сувениры</h2>
-          <p>Не только китайского, но и местного производства!</p>
-        </section>
-      </div>
-      <div class="index-content">
-        <figure class="photo-2"><img src="http://placehold.it/800x260" alt="Devil's bridge photo"></figure>
-        <section class="fact right">
-          <h2>Там есть мост дьявола</h2>
-          <span>№2</span>
-          <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-        </section>
-      </div>
-      <div class="index-content">
-        <section class="fact left">
-          <h2>Небольшая площадь</h2>
-          <span>№3</span>
-          <p>Все достопримечательности находятся очень близко</p>
-        </section>
-        <section class="fact center">
-          <h2>Красивая дорога</h2>
-          <span>№4</span>
-          <p>Ехать в седону из Лас-Вегаса совсем не скучно!</p>
-        </section>
-        <section class="fact right">
-          <h2>Мало туристов</h2>
-          <span>№5</span>
-          <p>Большинство едет в Гранд Каньон и толпится там</p>
-        </section>
-      </div>
+      <article class="promo">
+        <header class="promo-header">
+          <p class="deserves-more">Седона - небольшой городок в Аризоне, заслуживающий большего</p>
+          <p class="5-reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон</p>
+        </header>
+        <div class="media-block">
+          <section class="reason left">
+            <h2>Настоящий городок</h2>
+            <span>№1</span>
+            <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+          </section>
+          <figure class="photo right"><img src="http://placehold.it/800x260" alt="City photo"></figure>
+        </div>
+        <div class="features">
+          <section class="info housing">
+            <h2>Жилье</h2>
+            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </section>
+          <section class="info food">
+            <h2>Еда</h2>
+            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          </section>
+          <section class="info souvenirs">
+            <h2>Сувениры</h2>
+            <p>Не только китайского, но и местного производства!</p>
+          </section>
+        </div>
+        <div class="media-block">
+          <figure class="photo left"><img src="http://placehold.it/800x260" alt="Devil's bridge photo"></figure>
+          <section class="reason right">
+            <h2>Там есть мост дьявола</h2>
+            <span>№2</span>
+            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          </section>
+        </div>
+        <div class="other-reasons">
+          <section class="reason left">
+            <h2>Небольшая площадь</h2>
+            <span>№3</span>
+            <p>Все достопримечательности находятся очень близко</p>
+          </section>
+          <section class="reason center">
+            <h2>Красивая дорога</h2>
+            <span>№4</span>
+            <p>Ехать в седону из Лас-Вегаса совсем не скучно!</p>
+          </section>
+          <section class="reason right">
+            <h2>Мало туристов</h2>
+            <span>№5</span>
+            <p>Большинство едет в Гранд Каньон и толпится там</p>
+          </section>
+        </div>
+      </article>
       <div class="offer">
-        <section class="interested">
+        <section class="hotel-offer">
           <b>Заинтересовались?</b>
           <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         </section>
         <a class="btn hotel-search" href="#">Поиск гостиницы в Седоне</a>
         <form class="hotel-search-form">
           <label for="arrival">Дата заезда</label>
-          <input type="date" id="arrival" name="arrival" value="2016-04-24">
-          <!-- Значения name и id совпадают - это ок? -->
-          <a class="btn open-calendar" href="#"><img src="http://placehold.it/22x22" alt="Calendar symbol"></a>
-          <!-- Как поставить значек календаря внутрь поля формы? Обернуть их в один контейнер? -->
+          <div class="field-container">
+            <input type="date" id="arrival" name="arrival" value="2016-04-24">
+            <a class="btn open-calendar" href="#"><img src="http://placehold.it/22x22" alt="Calendar symbol"></a>
+          </div>
           <label for="departure">Дата выезда</label>
-          <input type="date" id="departure" name="departure" value="2016-07-04">
-          <a class="btn open-calendar" href="#"><img src="http://placehold.it/22x22" alt="Calendar symbol"></a>
+          <div class="field-container">
+            <input type="date" id="departure" name="departure" value="2016-07-04">
+            <a class="btn open-calendar" href="#"><img src="http://placehold.it/22x22" alt="Calendar symbol"></a>
+          </div>
           <label for="adults">Взрослые</label>
           <button class="plus-minus-btn minus">-</button>
           <input type="number" id="adults" name="adults" value="2">
