@@ -9,7 +9,7 @@
   <header class="main-header">
     <div class="container">
       <div class="index-logo">
-        <a href="/index.html" index class="link-to-main"><img src="http://placehold.it/140x70" alt="Sedona logo"></a>
+        <a href="index.html" index class="link-to-main"><img src="http://placehold.it/140x70" alt="Sedona logo"></a>
       </div>
       <nav class="main-menu">
         <ul>
@@ -22,50 +22,58 @@
     </div>
   </header>
   <main class="container">
-        <form class="search-form" action="#" method="post">
-          <section class="infrastructure-features">
-            <b class="filter-caption">Инфраструктура</b>
-            <input type="checkbox" id="pool" name="pool">
-            <label for="pool"></label>
-            <input type="checkbox" id="parking" name="parking">
-            <label for="parking"></label>
-            <input type="checkbox" id="wifi" name="wifi">
-            <label for="wifi"></label>
-          </section>
-          <section class="housing-type">
-            <b class="filter-caption">Тип жилья</b>
-            <input type="checkbox" id="hotel" name="hotel">
-            <label for="hotel"></label>
-            <input type="checkbox" id="motel" name="motel">
-            <label for="motel"></label>
-            <input type="checkbox" id="apartments" name="apartments">
-            <label for="apartments"></label>
-          </section>
-          <div class="price-per-day">
-            <b class="filter-caption">Стоимость в сутки(р)</b>
-            <div class="price-range-box">
-                <div class="price-range-from">От 0</div>
-                <div class="price-range-to">До 3000</div>
+    <form class="filter-form" action="#" method="post">
+      <section class="infrastructure-features">
+        <b class="filter-caption">Инфраструктура</b>
+        <input type="checkbox" id="pool" name="pool">
+        <label for="pool">Бассейн</label>
+        <input type="checkbox" id="parking" name="parking">
+        <label for="parking">Парковка</label>
+        <input type="checkbox" id="wifi" name="wifi">
+        <label for="wifi">Wi-fi</label>
+      </section>
+      <section class="housing-type">
+        <b class="filter-caption">Тип жилья</b>
+        <input type="checkbox" id="hotel" name="hotel">
+        <label for="hotel">Гостиница</label>
+        <input type="checkbox" id="motel" name="motel">
+        <label for="motel">Мотель</label>
+        <input type="checkbox" id="apartments" name="apartments">
+        <label for="apartments">Апартаменты</label>
+      </section>
+      <div class="price-per-day">
+        <b class="filter-caption">Стоимость в сутки(р)</b>
+        <div class="price-range-box">
+            <div class="price-range-from">От 0</div>
+            <div class="price-range-to">До 3000</div>
+        </div>
+        <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
             </div>
-            <div class="range-controls">
-                <div class="scale">
-                  <div class="bar"></div>
-                </div>
-                <div class="toggle min-toggle"></div>
-                <div class="toggle max-toggle"></div>
-            </div>
-          </div>
-          <button type="submit">Показать</button>
-        </form>
+            <div class="toggle min-toggle"></div>
+            <div class="toggle max-toggle"></div>
+        </div>
+      </div>
+      <button type="submit">Показать</button>
+    </form>
     <div class="sort">
       <section class="sort-type">
-        <p class="sort-found">Найдено:
-          <span clas="sort-found-value">3</span>
+        <p class="sort-elements">Найдено:
+          <span clas="sort-elements-count">3</span>
         </p>
         <span>Сортировка:</span>
-        <button class="sort-by-price">По цене</button>
-        <button class="sort-by-type">По типу</button>
-        <button class="sort-by-rating">По рейтингу</button>
+        <ul class="sort-by">
+          <li>
+            <button class="sort-by-price">По цене</button>
+          </li>
+          <li>
+            <button class="sort-by-price">По цене</button>
+          </li>
+          <li>
+            <button class="sort-by-rating">По рейтингу</button>
+          </li>
+        </ul>
       </section>
       <section class="sort-direction">
         <button class="sort-direction-asc"></button>
@@ -75,8 +83,8 @@
     <section class="hotels">
       <ul>
         <li>
-          <article class="hotel-info">
-            <div class="hotel-info-main">
+          <article class="hotel">
+            <div class="hotel-info">
               <figure class="hotel-photo"><img src="http://placehold.it/135x90" alt="Hotel photo"></figure>
               <h1 class="hotel-name">Amara resort &amp SPA</h1>
               <span class="hotel-type">Гостница</span>
@@ -90,14 +98,14 @@
           </article>
         </li>
         <li>
-          <article class="hotel-info">
-            <div class="hotel-info-main">
+          <article class="hotel">
+            <div class="hotel-info">
               <figure class="hotel-photo"><img src="http://placehold.it/135x90" alt="Hotel photo"></figure>
               <h1 class="hotel-name">Desert quail inn</h1>
               <span class="hotel-type">Мотель</span>
               <span class="hotel-price">От 2000 р.</span>
-              <a href="#" class="btn details">Подробнее</a>
-              <a href="#" class="btn book">Забронировать</a>
+              <a href="#" class="btn btn-details">Подробнее</a>
+              <a href="#" class="btn btn-book">Забронировать</a>
             </div>
             <p class="hotel-rating">Рейтинг:
               <span class="rating-value">8,9</span>
@@ -105,8 +113,8 @@
           </article>
         </li>
         <li>
-          <article class="hotel-info">
-            <div class="hotel-info-main">
+          <article class="hotel">
+            <div class="hotel-info">
               <figure class="hotel-photo"><img src="http://placehold.it/135x90" alt="Hotel photo"></figure>
               <h1 class="hotel-name">Villas at poco diablo</h1>
               <span class="hotel-type">Апартаменты</span>
