@@ -1,11 +1,180 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 body {
   font-size: 14px;
   line-height: 21px;
   color: #333333;
   font-weight: normal;
   font-family: "PT Sans Regular",  "Arial", sans-serif;
+  min-width: 786px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
+.main-header,
+.main-footer,
+.container {
+  margin: 0 auto;
+}
+
+.main-header {
+  height: 56px;
+}
+
+.main-footer {
+  height: 120px;
+}
+
+.main-menu ul {
+  padding: 0 46px;
+}
+
+.main-menu li {
+  width: 20%;
+  list-style: none;
+}
+
+.main-menu li:nth-child(1),
+.main-menu li:nth-child(2) {
+  float: left;
+  text-align: left;
+}
+
+.main-menu li:nth-child(3),
+.main-menu li:nth-child(4) {
+  float: right;
+  text-align: right;
+}
+
+.banner {
+  background-image: url("../img/bg_mountains.jpg");
+  height: 514px;
+}
+
+.banner img {
+  display: block;
+  margin: 0 auto;
+}
+
+.promo-header {
+  height: 211px;
+}
+
+.promo-header {
+  display: table;
+  margin: auto;
+}
+
+.promo-header + .media-block .reason,
+.features + .media-block .photo,
+.features section,
+.other-reasons section,
+.main-footer section {
+  float: left;
+}
+
+.promo-header + .media-block .photo,
+.features + .media-block .reason {
+  float: right;
+}
+
+.reason,
+.features section,
+.main-footer section {
+  width: 33%;
+  margin: 0;
+}
+
+.media-block .photo {
+  overflow: hidden;
+  width: 67%;
+  margin: 0;
+}
+
+.media-block img {
+  width: 100%;
+}
+
+.media-block .reason {
+  background-color: #81b3d2;
+}
+
+.other-reasons .reason {
+  background-color: #eeeeee;
+}
+.reason,
+.media-block .photo {
+  height: 256px;
+}
+
+.features {
+  height: 330px;
+}
+
+.hotel-offer {
+  display: table;
+  margin: auto;
+  height: 291px;
+}
+
+.hotel-search-form {
+  position: fixed;
+  display: none;
+}
+
+/*hotels.html*/
+.filter-form {
+  background-image: url("../img/bg_mountains_blurred.jpg");
+  height: 217px;
+}
+
+.filter-form fieldset{
+  width: 30%;
+  float: left;
+}
+
+.filter-form fieldset:last-child {
+  width: 60%;
+}
+
+ .hotel-info {
+  width: 67%;
+  float: left;
+  margin: 0;
+  list-style: none;
+}
+
+ .hotel-rating {
+  width: 33%;
+  float: right;
+  margin: 0;
+  text-align: right;
+}
+
+.sort-by li,
+.hotels li {
+  list-style: none;
+}
+
+.sort * {
+  display: inline-block;
+}
+
+
+/*fonts*/
 h1 {
   font-size: 21px;
   line-height: 26px;

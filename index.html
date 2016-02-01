@@ -9,34 +9,34 @@
     <header class="main-header">
       <div class="container">
         <div class="index-logo">
-          <img width="138" height="70" src="img/img_logo.png" alt="Sedona logo">
+          <a href="index.html" class="link-to-main"><img width="138" src="img/img_logo.png" alt="Sedona logo"></a>
         </div>
-        <nav class="main-menu">
+        <nav class="main-menu clearfix">
           <ul>
             <li><a href="#">Информация</a></li>
             <li><a href="#">Фото и видео</a></li>
-            <li><a href="#">Карта штата</a></li>
             <li><a href="#">Гостиницы</a></li>
+            <li><a href="#">Карта штата</a></li>
           </ul>
         </nav>
       </div>
     </header>
     <main class="container">
       <div class="banner">
-        <img width="458" height="352" src="img/img_welcome.png" alt="Sedona banner">
+        <img width="458" src="img/img_welcome.png" alt="Sedona banner">
       </div>
       <article class="promo">
         <header class="promo-header">
           <p class="deserves-more">Седона - небольшой городок в Аризоне, заслуживающий большего</p>
           <p class="5-reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон</p>
         </header>
-        <div class="media-block">
+        <div class="media-block clearfix">
           <section class="reason">
             <h2>Настоящий городок</h2>
             <span>№1</span>
             <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
           </section>
-          <figure class="photo"><img width="800" height="401" src="img/img_city_photo.jpg" alt="City photo"></figure>
+          <figure class="photo"><img width="800" src="img/img_city_photo.jpg" alt="City photo"></figure>
         </div>
         <div class="features">
           <section class="info housing">
@@ -52,26 +52,26 @@
             <p>Не только китайского, но и местного производства!</p>
           </section>
         </div>
-        <div class="media-block">
-          <figure class="photo"><img width="800" height="400" src="img/img_bridge_photo.jpg" alt="Devil's bridge photo"></figure>
+        <div class="media-block clearfix">
+          <figure class="photo"><img width="800" src="img/img_bridge_photo.jpg" alt="Devil's bridge photo"></figure>
           <section class="reason">
             <h2>Там есть мост дьявола</h2>
             <span>№2</span>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </section>
         </div>
-        <div class="other-reasons">
-          <section class="reason left">
+        <div class="other-reasons clearfix">
+          <section class="reason">
             <h2>Небольшая площадь</h2>
             <span>№3</span>
             <p>Все достопримечательности находятся очень близко</p>
           </section>
-          <section class="reason center">
+          <section class="reason">
             <h2>Красивая дорога</h2>
             <span>№4</span>
             <p>Ехать в седону из Лас-Вегаса совсем не скучно!</p>
           </section>
-          <section class="reason right">
+          <section class="reason">
             <h2>Мало туристов</h2>
             <span>№5</span>
             <p>Большинство едет в Гранд Каньон и толпится там</p>
@@ -82,18 +82,18 @@
         <section class="hotel-offer">
           <b>Заинтересовались?</b>
           <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <a class="btn hotel-search" href="#">Поиск гостиницы в Седоне</a>
         </section>
-        <a class="btn hotel-search" href="#">Поиск гостиницы в Седоне</a>
         <form class="hotel-search-form">
           <label for="arrival">Дата заезда</label>
           <div class="date-field-container">
             <input type="date" id="arrival" name="arrival" value="2016-04-24">
-            <a class="btn open-calendar" href="#"><img src="http://placehold.it/22x22" alt="Calendar symbol"></a>
+            <a class="btn open-calendar" href="#"></a>
           </div>
           <label for="departure">Дата выезда</label>
           <div class="date-field-container">
             <input type="date" id="departure" name="departure" value="2016-07-04">
-            <a class="btn open-calendar" href="#"><img src="http://placehold.it/22x22" alt="Calendar symbol"></a>
+            <a class="btn open-calendar" href="#"></a>
           </div>
           <label for="adults">Взрослые</label>
           <button class="plus-minus-btn minus">-</button>
@@ -107,11 +107,11 @@
         </form>
       </div>
       <div class="map">
-        <img width="1200" height="593" src="img/img_map.jpg" alt="Sedona on Google maps">
+        <img width="1200" src="img/img_map.jpg" alt="Sedona on Google maps">
       </div>
     </main>
     <footer class="main-footer">
-      <div class="container">
+      <div class="container clearfix">
         <section class="footer-hashtag">
           <b>#Visitsedona</b>
         </section>
@@ -122,7 +122,7 @@
         </section>
         <section class="footer-copyright">
           <p>Website by</p>
-          <a href="https://htmlacademy.ru" class="logo-link"><img width="113" height="39" src="img/img_copyright.png" alt="htmlacademy.ru logo"></a>
+          <a href="https://htmlacademy.ru" class="logo-link"><img width="113" src="img/img_copyright.png" alt="htmlacademy.ru logo"></a>
         </section>
       </div>
     </footer>
