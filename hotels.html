@@ -6,24 +6,22 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="main-header">
-    <div class="container">
-      <div class="index-logo">
-        <a href="index.html" class="link-to-main"><img width="138" src="img/img_logo.png" alt="Sedona logo"></a>
-      </div>
-      <nav class="main-menu clearfix">
-        <ul>
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <li><a href="#">Гостиницы</a></li>
-          <li><a href="#">Карта штата</a></li>
-        </ul>
-      </nav>
+  <header class="main-header container clearfix">
+    <div class="index-logo">
+      <a href="index.html" class="link-to-main"><img width="138" src="img/img_logo.png" alt="Sedona logo"></a>
     </div>
+    <nav class="main-menu clearfix">
+      <ul>
+        <li class="float-left"><a href="#">Информация</a></li>
+        <li class="float-left"><a href="#">Фото и видео</a></li>
+        <li class="float-right"><a href="#">Гостиницы</a></li>
+        <li class="float-right"><a href="#">Карта штата</a></li>
+      </ul>
+    </nav>
   </header>
   <main class="container">
-    <form class="filter-form" action="#" method="post">
-      <fieldset class="infrastructure-features">
+    <form class="filter-form clearfix" action="#" method="post">
+      <fieldset class="infrastructure-features float-left">
         <legend>Инфраструктура</legend>
         <input type="checkbox" id="pool" name="pool">
         <label for="pool">Бассейн</label>
@@ -32,7 +30,7 @@
         <input type="checkbox" id="wifi" name="wifi">
         <label for="wifi">Wi-fi</label>
       </fieldset>
-      <fieldset class="housing-type">
+      <fieldset class="housing-type float-left">
         <legend>Тип жилья</legend>
         <input type="checkbox" id="hotel" name="hotel">
         <label for="hotel">Гостиница</label>
@@ -41,7 +39,7 @@
         <input type="checkbox" id="apartments" name="apartments">
         <label for="apartments">Апартаменты</label>
       </fieldset>
-      <div class="price-per-day">
+      <div class="price-per-day float-left">
         <b class="filter-caption">Стоимость в сутки(р)</b>
         <div class="price-range-box">
             <div class="price-range-from">От 0</div>
@@ -84,45 +82,45 @@
       <ul>
         <li>
           <article class="hotel clearfix">
-            <div class="hotel-info">
-              <figure class="hotel-photo"><img width="135" src="img/img_hotel_amara.jpg" alt="Hotel photo"></figure>
+            <div class="hotel-info float-left">
+              <figure class="hotel-photo float-left"><img width="135" src="img/img_hotel_amara.jpg" alt="Hotel photo"></figure>
               <h1 class="hotel-name">Amara resort &amp; SPA</h1>
               <span class="hotel-type">Гостница</span>
               <span class="hotel-price">От 3500 р.</span>
               <a href="#" class="btn details">Подробнее</a>
               <a href="#" class="btn book">Забронировать</a>
             </div>
-            <p class="hotel-rating">Рейтинг:
+            <p class="hotel-rating float-right">Рейтинг:
               <span class="rating-value">8,5</span>
             </p>
           </article>
         </li>
         <li>
           <article class="hotel clearfix">
-            <div class="hotel-info">
-              <figure class="hotel-photo"><img width="135"  src="img/img_hotel_desert.jpg" alt="Hotel photo"></figure>
+            <div class="hotel-info float-left">
+              <figure class="hotel-photo float-left"><img width="135"  src="img/img_hotel_desert.jpg" alt="Hotel photo"></figure>
               <h1 class="hotel-name">Desert quail inn</h1>
               <span class="hotel-type">Мотель</span>
               <span class="hotel-price">От 2000 р.</span>
               <a href="#" class="btn btn-details">Подробнее</a>
               <a href="#" class="btn btn-book">Забронировать</a>
             </div>
-            <p class="hotel-rating">Рейтинг:
+            <p class="hotel-rating float-right">Рейтинг:
               <span class="rating-value">8,9</span>
             </p>
           </article>
         </li>
         <li>
           <article class="hotel clearfix">
-            <div class="hotel-info">
-              <figure class="hotel-photo"><img width="135"  src="img/img_hotel_villas.jpg" alt="Hotel photo"></figure>
+            <div class="hotel-info float-left">
+              <figure class="hotel-photo float-left"><img width="135"  src="img/img_hotel_villas.jpg" alt="Hotel photo"></figure>
               <h1 class="hotel-name">Villas at poco diablo</h1>
               <span class="hotel-type">Апартаменты</span>
               <span class="hotel-price">От 4000 р.</span>
               <a href="#" class="btn details">Подробнее</a>
               <a href="#" class="btn book">Забронировать</a>
             </div>
-            <p class="hotel-rating">Рейтинг:
+            <p class="hotel-rating float-right">Рейтинг:
               <span class="rating-value">9,2</span>
             </p>
           </article>
@@ -130,21 +128,19 @@
       </ul>
     </section>
   </main>
-  <footer class="main-footer">
-    <div class="container clearfix">
-      <section class="footer-hashtag">
-        <b>#Visitsedona</b>
+  <footer class="main-footer container clearfix">
+    <section class="footer-hashtag float-left">
+      <b>#Visitsedona</b>
+    </section>
+    <section class="footer-social float-left">
+      <a class="social-btn social-btn-tw" href="#">Twitter</a>
+      <a class="social-btn social-btn-fb" href="#">Facebook</a>
+      <a class="social-btn social-btn-ytb" href="#">Youtube</a>
+    </section>
+    <section class="footer-copyright float-left">
+      <p>Website by</p>
+      <a href="https://htmlacademy.ru" class="logo-link"><img width="113" src="img/img_copyright.png" alt="htmlacademy.ru logo"></a>
       </section>
-      <section class="footer-social">
-        <a class="social-btn social-btn-tw" href="#">Twitter</a>
-        <a class="social-btn social-btn-fb" href="#">Facebook</a>
-        <a class="social-btn social-btn-ytb" href="#">Youtube</a>
-      </section>
-      <section class="footer-copyright">
-        <p>Website by</p>
-        <a href="https://htmlacademy.ru" class="logo-link"><img width="113" src="img/img_copyright.png" alt="htmlacademy.ru logo"></a>
-      </section>
-    </div>
   </footer>
 </body>
 </html>
