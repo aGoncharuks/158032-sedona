@@ -1,4 +1,31 @@
+/*for tests*/
+.tests::after {
+  content: "";
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.index-tests::after {
+  background: url("../img/sedona-index-1200-full.jpg") no-repeat top center;
+}
+
+.hotels-tests::after {
+  background: url("../img/sedona-hotels-1200-full.jpg") no-repeat top center;
+}
+
 /*tools*/
+html {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -19,6 +46,19 @@
   outline: 2px dashed blue;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
+.footer-overlay {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 /*base*/
 body {
   margin: 0;
@@ -26,16 +66,19 @@ body {
   line-height: 21px;
   color: #333333;
   font-weight: normal;
-  font-family: "PT Sans Regular",  "Arial", sans-serif;
+  font-family: "PT Sans",  "Arial", sans-serif;
+  text-transform: uppercase;
+  position: relative;
 }
 
 figure,
-div,
-section,
-article,
 fieldset,
-p {
+p,
+ul,
+h1,
+h2 {
   margin: 0;
+  padding: 0;
 }
 
 h1 {
@@ -43,7 +86,7 @@ h1 {
   line-height: 26px;
   color: #000000;
   font-weight: bold;
-  font-family: "PT Sans Regular",  "Arial", sans-serif;
+  font-family: "PT Sans",  "Arial", sans-serif;
 }
 
 h2 {
@@ -51,12 +94,7 @@ h2 {
   line-height: 21px;
   color: #000000;
   font-weight: bold;
-  font-family: "PT Sans Regular",  "Arial", sans-serif;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
+  font-family: "PT Sans",  "Arial", sans-serif;
 }
 
 li {
@@ -64,29 +102,28 @@ li {
 }
 
 /*layout*/
-.container {
-  margin: 0 auto;
-  min-width: 768px;
-  max-width: 1200px;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-  outline: 2px solid blue;
-}
-
 .main-header {
   height: 56px;
   outline: 2px solid blue;
 }
 
+.container {
+  margin: 0 auto;
+  min-width: 768px;
+  max-width: 1200px;
+  outline: 2px solid blue;
+}
+
 .main-footer {
+  width: 100%;
   height: 120px;
   outline: 2px solid red;
+  text-align: center;
 }
 
 /*module*/
 .main-menu ul {
-  padding: 0 46px;
+  padding: 0 6%;
 }
 
 .index-logo {
@@ -102,11 +139,13 @@ li {
   width: 20%;
 }
 
-.main-menu .float-left {
+.main-menu li:nth-child(1),
+.main-menu li:nth-child(2) {
   text-align: left;
 }
 
-.main-menu .float-right {
+.main-menu li:nth-child(3),
+.main-menu li:nth-child(4) {
   text-align: right;
 }
 
@@ -121,18 +160,27 @@ li {
   display: block;
   margin: 0 auto;
 }
+.promo {
+  text-align: center;
+}
 
 .promo-header  {
+  width: 576px;
   height: 211px;
-  display: table;
   margin: auto;
+  padding: 55px 0;
   outline: 2px dashed blue;
+}
+
+.promo-header h1 {
+  margin-bottom: 28px;
 }
 
 .reason {
   width: 33.3333%;
   height: 256px;
   background-color: #eeeeee;
+  padding-top: 57px;
 }
 
 .media-block .reason {
@@ -145,15 +193,18 @@ li {
   overflow: hidden;
 }
 
-.features section {
+.feature {
   width: 33.3333%;
   height: 330px;
+  padding-top: 160px;
 }
 
 .hotel-offer {
   height: 291px;
   display: table;
   margin: auto;
+  padding-top: 57px;
+  text-align: center;
 }
 
 .hotel-search-form {
@@ -173,33 +224,41 @@ li {
 }
 
 .filter-form {
-  background-image: url("../img/bg_mountains_blurred.jpg");
+  background-image: url("../img/bg_mountains_blurred1.jpg");
   background-position: center center;
 }
 
-.filter-form fieldset,
+.filter-form fieldset {
+  width: 25%;
+  height: 217px;
+  border: none;
+}
+
 .filter-form .price-per-day {
-  width: 30%;
+  width: 50%;
   height: 217px;
 }
 
-.filter-form fieldset:last-child {
-  width: 60%;
+.sort  {
+  height: 87px;
+  padding: 30px 0 30px 73px;
 }
 
-.sort * {
-  display: inline-block;
-}
-
- .hotel-info {
+.hotel-info {
   width: 66.6666%;
   height: 152px;
   outline: 2px dashed blue;
+  padding: 30px 0 30px 73px;
 }
 
- .hotel-rating {
+.hotel-photo {
+  margin-right: 30px;
+}
+
+.hotel-rating {
   width: 33.3333%;
   height: 152px;
+  padding: 94px 73px 0 0;
   text-align: right;
 }
 

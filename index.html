@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Sedona city</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' href='css/style.css' type='text/css'>
   </head>
-  <body>
+  <body class="index-tests tests">
     <header class="main-header container clearfix">
       <div class="index-logo">
         <a href="index.html" class="link-to-main"><img width="138" src="img/img_logo.png" alt="Sedona logo"></a>
@@ -25,8 +26,8 @@
       </div>
       <article class="promo">
         <header class="promo-header">
-          <p class="deserves-more">Седона - небольшой городок в Аризоне, заслуживающий большего</p>
-          <p class="5-reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон</p>
+          <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+          <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон</p>
         </header>
         <div class="media-block clearfix">
           <section class="reason float-left">
@@ -94,18 +95,18 @@
             <a class="btn open-calendar" href="#"></a>
           </div>
           <label for="adults">Взрослые</label>
-          <button class="plus-minus-btn minus">-</button>
+          <button class="plus-minus-btn minus" type="button">-</button>
           <input type="number" id="adults" name="adults" value="2">
-          <button class="plus-minus-btn plus">+</button>
+          <button class="plus-minus-btn plus" type="button">+</button>
           <label for="kids">Дети</label>
-          <button class="plus-minus-btn minus">-</button>
+          <button class="plus-minus-btn minus" type="button">-</button>
           <input type="number" id="kids" name="kids" value="0">
-          <button class="plus-minus-btn plus">+</button>
+          <button class="plus-minus-btn plus" type="button">+</button>
           <button class="btn" type="submit">Найти</button>
         </form>
       <figure id="map" class="map"></figure>
     </main>
-    <footer class="main-footer container clearfix">
+    <footer class="main-footer container clearfix footer-overlay">
       <section class="footer-hashtag float-left">
         <b>#Visitsedona</b>
       </section>

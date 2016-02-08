@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <title>Hotels</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+  <link rel='stylesheet' href='css/style.css' type='text/css'>
 </head>
-<body>
+<body class="hotels-tests tests">
   <header class="main-header container clearfix">
     <div class="index-logo">
       <a href="index.html" class="link-to-main"><img width="138" src="img/img_logo.png" alt="Sedona logo"></a>
@@ -39,7 +40,7 @@
         <input type="checkbox" id="apartments" name="apartments">
         <label for="apartments">Апартаменты</label>
       </fieldset>
-      <div class="price-per-day float-left">
+      <div class="price-per-day float-right">
         <b class="filter-caption">Стоимость в сутки(р)</b>
         <div class="price-range-box">
             <div class="price-range-from">От 0</div>
@@ -51,31 +52,31 @@
             </div>
             <div class="toggle min-toggle"></div>
             <div class="toggle max-toggle"></div>
+            <button type="submit">Показать</button>
         </div>
       </div>
-      <button type="submit">Показать</button>
     </form>
     <div class="sort clearfix">
-      <section class="sort-type">
-        <p class="sort-elements">Найдено:
+      <section class="sort-type inline-block">
+        <p class="sort-elements inline-block">Найдено:
           <span class="sort-elements-count">3</span>
         </p>
         <span>Сортировка:</span>
-        <ul class="sort-by">
-          <li>
-            <a class="sort-by-price" href="#">По цене</a>
+        <ul class="sort-by inline-block">
+          <li class="inline-block">
+            <a class="sort-by-price " href="#">По цене</a>
           </li>
-          <li>
+          <li class="inline-block">
             <a class="sort-by-type" href="#">По типу</a>
           </li>
-          <li>
+          <li class="inline-block">
             <a class="sort-by-rating" href="#">По рейтингу</a>
           </li>
         </ul>
       </section>
-      <section class="sort-direction">
-        <div class="sort-direction-asc"></div>
-        <div class="sort-direction-desc"></div>
+      <section class="sort-direction inline-block">
+        <div class="sort-direction-asc inline-block"></div>
+        <div class="sort-direction-desc inline-block"></div>
       </section>
     </div>
     <section class="hotels">
@@ -86,7 +87,7 @@
               <figure class="hotel-photo float-left"><img width="135" src="img/img_hotel_amara.jpg" alt="Hotel photo"></figure>
               <h1 class="hotel-name">Amara resort &amp; SPA</h1>
               <span class="hotel-type">Гостница</span>
-              <span class="hotel-price">От 3500 р.</span>
+              <span class="hotel-price">От 3500 р.</span><br>
               <a href="#" class="btn details">Подробнее</a>
               <a href="#" class="btn book">Забронировать</a>
             </div>
@@ -101,7 +102,7 @@
               <figure class="hotel-photo float-left"><img width="135"  src="img/img_hotel_desert.jpg" alt="Hotel photo"></figure>
               <h1 class="hotel-name">Desert quail inn</h1>
               <span class="hotel-type">Мотель</span>
-              <span class="hotel-price">От 2000 р.</span>
+              <span class="hotel-price">От 2000 р.</span><br>
               <a href="#" class="btn btn-details">Подробнее</a>
               <a href="#" class="btn btn-book">Забронировать</a>
             </div>
@@ -116,7 +117,7 @@
               <figure class="hotel-photo float-left"><img width="135"  src="img/img_hotel_villas.jpg" alt="Hotel photo"></figure>
               <h1 class="hotel-name">Villas at poco diablo</h1>
               <span class="hotel-type">Апартаменты</span>
-              <span class="hotel-price">От 4000 р.</span>
+              <span class="hotel-price">От 4000 р.</span><br>
               <a href="#" class="btn details">Подробнее</a>
               <a href="#" class="btn book">Забронировать</a>
             </div>
