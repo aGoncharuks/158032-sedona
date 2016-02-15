@@ -3,26 +3,27 @@
   <head>
     <meta charset="utf-8">
     <title>Sedona city</title>
-    <link href='https://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css" type='text/css'>
     <link rel='stylesheet' href='css/style.css' type='text/css'>
   </head>
-  <body class="index-tests tests">
+  <body>
     <header class="main-header container clearfix">
-      <div class="index-logo">
-        <a href="index.html" class="link-to-main"><img width="138" src="img/img_logo.png" alt="Sedona logo"></a>
-      </div>
       <nav class="main-menu clearfix">
         <ul>
           <li class="float-left"><a href="#">Информация</a></li>
           <li class="float-left"><a href="#">Фото и видео</a></li>
           <li class="float-right"><a href="#">Гостиницы</a></li>
           <li class="float-right"><a href="#">Карта штата</a></li>
+          <div class="index-logo">
+            <a href="index.html" class="link-to-main"><img width="138" height="70" src="img/img_logo.png" alt="Sedona logo"></a>
+          </div>
         </ul>
       </nav>
     </header>
     <main class="container">
       <div class="banner">
-        <img width="458" src="img/img_welcome.png" alt="Sedona banner">
+        <img width="458" height="352" src="img/img_welcome.png" alt="Sedona banner">
       </div>
       <article class="promo">
         <header class="promo-header">
@@ -35,24 +36,32 @@
             <span>№1</span>
             <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
           </section>
-          <figure class="photo float-right"><img width="800" src="img/img_city_photo.jpg" alt="City photo"></figure>
+          <figure class="photo float-right"><img width="800" height="401" src="img/img_city_photo.jpg" alt="City photo"></figure>
         </div>
         <div class="features clearfix">
           <section class="feature housing float-left">
-            <h2>Жилье</h2>
+            <h2>
+              <div class="feature-icon"></div>
+              Жилье
+            </h2>
             <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </section>
           <section class="feature food float-left">
-            <h2>Еда</h2>
+            <h2>
+              <div class="feature-icon"></div>
+              Еда
+            </h2>
             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </section>
           <section class="feature souvenirs float-left">
-            <h2>Сувениры</h2>
+            <h2>
+            <div class="feature-icon"></div>
+              Сувениры</h2>
             <p>Не только китайского, но и местного производства!</p>
           </section>
         </div>
         <div class="media-block clearfix">
-          <figure class="photo float-left"><img width="800" src="img/img_bridge_photo.jpg" alt="Devil's bridge photo"></figure>
+          <figure class="photo float-left"><img width="800" height="400" src="img/img_bridge_photo.jpg" alt="Devil's bridge photo"></figure>
           <section class="reason float-right">
             <h2>Там есть мост дьявола</h2>
             <span>№2</span>
@@ -84,40 +93,50 @@
           <a class="btn hotel-search" href="#">Поиск гостиницы в Седоне</a>
         </section>
         <form class="hotel-search-form is-hidden">
-          <label for="arrival">Дата заезда</label>
-          <div class="date-field-container">
-            <input type="date" id="arrival" name="arrival" value="2016-04-24">
-            <a class="btn open-calendar" href="#"></a>
+          <div class="hotel-search-container">
+            <div class="date-field-container">
+              <label for="arrival">Дата заезда:</label>
+              <input type="text" id="arrival" name="arrival" value="24 апреля 2016">
+              <a class="btn open-calendar" href="#"></a>
+            </div>
+            <div class="date-field-container">
+              <label for="departure">Дата выезда:</label>
+              <input id="departure" name="departure" value="4 июля 2016">
+              <a class="btn open-calendar" href="#"></a>
+            </div>
+            <div class="guest-field-container">
+              <label class="adults" for="adults">Взрослые:</label>
+            <div class="guest-number">
+              <button class="plus-minus-btn minus" type="button">-</button>
+              <input type="text" size="1" id="adults" name="adults" value="2">
+              <button class="plus-minus-btn plus" type="button">+</button>
+            </div>
+            </div>
+            <div class="guest-field-container">
+                <label class="kids" for="kids">Дети:</label>
+                <div class="guest-number">
+                <button class="minus" type="button">-</button>
+                <input type="text" size="1" id="kids" name="kids" value="0">
+                <button class="plus" type="button">+</button>
+              </div>
+            </div>
+            <button class="btn find-hotel" type="submit">Найти</button>
           </div>
-          <label for="departure">Дата выезда</label>
-          <div class="date-field-container">
-            <input type="date" id="departure" name="departure" value="2016-07-04">
-            <a class="btn open-calendar" href="#"></a>
-          </div>
-          <label for="adults">Взрослые</label>
-          <button class="plus-minus-btn minus" type="button">-</button>
-          <input type="number" id="adults" name="adults" value="2">
-          <button class="plus-minus-btn plus" type="button">+</button>
-          <label for="kids">Дети</label>
-          <button class="plus-minus-btn minus" type="button">-</button>
-          <input type="number" id="kids" name="kids" value="0">
-          <button class="plus-minus-btn plus" type="button">+</button>
-          <button class="btn" type="submit">Найти</button>
         </form>
-      <figure id="map" class="map"></figure>
+      <figure id="map" class="map"><img id="mapImage" src="img/img_map.jpg" alt="Google map"></figure>
     </main>
     <footer class="main-footer container clearfix footer-overlay">
       <section class="footer-hashtag float-left">
         <b>#Visitsedona</b>
       </section>
       <section class="footer-social float-left">
-        <a class="social-btn social-btn-tw" href="#">Twitter</a>
-        <a class="social-btn social-btn-fb" href="#">Facebook</a>
-        <a class="social-btn social-btn-ytb" href="#">Youtube</a>
+        <a class="social-btn social-btn-tw" href="#"></a>
+        <a class="social-btn social-btn-fb" href="#"></a>
+        <a class="social-btn social-btn-ytb" href="#"></a>
       </section>
       <section class="footer-copyright float-left">
         <p>Website by</p>
-        <a href="https://htmlacademy.ru" class="logo-link"><img width="113" src="img/img_copyright.png" alt="htmlacademy.ru logo"></a>
+        <a href="https://htmlacademy.ru" class="logo-link"><img width="113" height="39" src="img/img_copyright.png" alt="htmlacademy.ru logo"></a>
         </section>
     </footer>
     <script src="js/script.js"></script>

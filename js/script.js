@@ -17,10 +17,6 @@ window.onload = function () {
   var foundGoogle, img;
   foundGoogle = typeof google === 'object' && typeof google.maps === 'object';
   if (foundGoogle) {
-    initialize();
-  } else {
-    img = new Image();
-    img.src = 'img/img_map.jpg';
-    document.getElementById('map').appendChild(img);
+  document.getElementById('mapImage').classList.add('.is-hidden');
   }
 }
