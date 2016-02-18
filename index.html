@@ -13,7 +13,7 @@
         <ul>
           <li class="float-left"><a href="#">Информация</a></li>
           <li class="float-left"><a href="#">Фото и видео</a></li>
-          <li class="float-right"><a href="#">Гостиницы</a></li>
+          <li class="float-right"><a href="hotels.html">Гостиницы</a></li>
           <li class="float-right"><a href="#">Карта штата</a></li>
           <div class="index-logo">
             <a href="index.html" class="link-to-main"><img width="138" height="70" src="img/img_logo.png" alt="Sedona logo"></a>
@@ -33,10 +33,10 @@
         <div class="media-block clearfix">
           <section class="reason float-left">
             <h2>Настоящий городок</h2>
-            <span>№1</span>
+            <span>- №1 -</span>
             <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
           </section>
-          <figure class="photo float-right"><img width="800" height="401" src="img/img_city_photo.jpg" alt="City photo"></figure>
+          <figure class="photo float-right"><img width="800" src="img/img_city_photo.jpg" alt="City photo"></figure>
         </div>
         <div class="features clearfix">
           <section class="feature housing float-left">
@@ -61,27 +61,27 @@
           </section>
         </div>
         <div class="media-block clearfix">
-          <figure class="photo float-left"><img width="800" height="400" src="img/img_bridge_photo.jpg" alt="Devil's bridge photo"></figure>
+          <figure class="photo float-left"><img width="800" src="img/img_bridge_photo.jpg" alt="Devil's bridge photo"></figure>
           <section class="reason float-right">
             <h2>Там есть мост дьявола</h2>
-            <span>№2</span>
+            <span>- №2 -</span>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </section>
         </div>
         <div class="other-reasons clearfix">
           <section class="reason float-left">
             <h2>Небольшая площадь</h2>
-            <span>№3</span>
+            <span>- №3 -</span>
             <p>Все достопримечательности находятся очень близко</p>
           </section>
           <section class="reason float-left">
             <h2>Красивая дорога</h2>
-            <span>№4</span>
+            <span>- №4 -</span>
             <p>Ехать в седону из Лас-Вегаса совсем не скучно!</p>
           </section>
           <section class="reason float-left">
             <h2>Мало туристов</h2>
-            <span>№5</span>
+            <span>- №5 -</span>
             <p>Большинство едет в Гранд Каньон и толпится там</p>
           </section>
         </div>
@@ -90,34 +90,34 @@
         <section class="hotel-offer">
           <b>Заинтересовались?</b>
           <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <a class="btn hotel-search" href="#">Поиск гостиницы в Седоне</a>
+          <button class="btn hotel-search" href="" onclick="hotelSearchForm()">Поиск гостиницы в Седоне</button>
         </section>
-        <form class="hotel-search-form is-hidden">
+        <form id="hotelSearchForm"class="hotel-search-form is-hidden">
           <div class="hotel-search-container">
             <div class="date-field-container">
               <label for="arrival">Дата заезда:</label>
               <input type="text" id="arrival" name="arrival" value="24 апреля 2016">
-              <a class="btn open-calendar" href="#"></a>
+              <a class="btn open-calendar" href="#"><span class="icon-calendar"></span></a>
             </div>
             <div class="date-field-container">
               <label for="departure">Дата выезда:</label>
               <input id="departure" name="departure" value="4 июля 2016">
-              <a class="btn open-calendar" href="#"></a>
+              <a class="btn open-calendar" href="#"><span class="icon-calendar"></span></a>
             </div>
             <div class="guest-field-container">
               <label class="adults" for="adults">Взрослые:</label>
             <div class="guest-number">
-              <button class="plus-minus-btn minus" type="button">-</button>
+              <button class="minus" type="button"><span class="icon-minus"></span></button>
               <input type="text" size="1" id="adults" name="adults" value="2">
-              <button class="plus-minus-btn plus" type="button">+</button>
+              <button class="plus" type="button"><span class="icon-plus"></span></button>
             </div>
             </div>
             <div class="guest-field-container">
                 <label class="kids" for="kids">Дети:</label>
                 <div class="guest-number">
-                <button class="minus" type="button">-</button>
+                <button class="minus" type="button"><span class="icon-minus"></span></button>
                 <input type="text" size="1" id="kids" name="kids" value="0">
-                <button class="plus" type="button">+</button>
+                <button class="plus" type="button"><span class="icon-plus"></span></button>
               </div>
             </div>
             <button class="btn find-hotel" type="submit">Найти</button>
@@ -130,13 +130,13 @@
         <b>#Visitsedona</b>
       </section>
       <section class="footer-social float-left">
-        <a class="social-btn social-btn-tw" href="#"></a>
-        <a class="social-btn social-btn-fb" href="#"></a>
-        <a class="social-btn social-btn-ytb" href="#"></a>
+        <a class="social-btn social-btn-tw" href="https://twitter.com/cityofsedonaaz"><span class="icon-twitter"></span></a>
+        <a class="social-btn social-btn-fb" href="https://www.facebook.com/places/Cem-mozno-zanatsa-v-Sedona/109433465748891/"><span class="icon-facebook"></span></a>
+        <a class="social-btn social-btn-ytb" href="https://www.youtube.com/watch?v=qhdB9UmrRWM"><span class="icon-youtube"></span></a>
       </section>
       <section class="footer-copyright float-left">
         <p>Website by</p>
-        <a href="https://htmlacademy.ru" class="logo-link"><img width="113" height="39" src="img/img_copyright.png" alt="htmlacademy.ru logo"></a>
+        <a href="https://htmlacademy.ru" class="logo-link"></a>
         </section>
     </footer>
     <script src="js/script.js"></script>

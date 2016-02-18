@@ -17,6 +17,11 @@ window.onload = function () {
   var foundGoogle, img;
   foundGoogle = typeof google === 'object' && typeof google.maps === 'object';
   if (foundGoogle) {
-  document.getElementById('mapImage').classList.add('.is-hidden');
+    document.getElementById('mapImage').classList.add('is-hidden');
   }
+}
+
+function hotelSearchForm() {
+  var searchForm = document.getElementById('hotelSearchForm');
+  searchForm.classList.toggle('is-hidden');
 }

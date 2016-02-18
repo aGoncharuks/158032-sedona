@@ -4,19 +4,20 @@
   <meta charset="UTF-8">
   <title>Hotels</title>
   <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/normalize.css" type='text/css'>
   <link rel='stylesheet' href='css/style.css' type='text/css'>
 </head>
 <body>
   <header class="main-header container clearfix">
-    <div class="index-logo">
-      <a href="index.html" class="link-to-main"><img width="138" height="70" src="img/img_logo.png" alt="Sedona logo"></a>
-    </div>
     <nav class="main-menu clearfix">
       <ul>
         <li class="float-left"><a href="#">Информация</a></li>
         <li class="float-left"><a href="#">Фото и видео</a></li>
-        <li class="float-right"><a class="active" href="#">Гостиницы</a></li>
+        <li class="float-right active"><a href="#">Гостиницы</a></li>
         <li class="float-right"><a href="#">Карта штата</a></li>
+        <div class="index-logo">
+          <a href="index.html" class="link-to-main"><img width="138" height="70" src="img/img_logo.png" alt="Sedona logo"></a>
+        </div>
       </ul>
     </nav>
   </header>
@@ -25,32 +26,26 @@
       <fieldset class="infrastructure-features float-left">
         <legend>Инфраструктура:</legend>
         <input type="checkbox" id="pool" name="pool" checked>
-        <label for="pool">Бассейн
-          <button class="checkbox-icon" checked></button>
-        </label>
+        <span class="icon-checkbox"></span>
+        <label for="pool">Бассейн</label>
         <input type="checkbox" id="parking" name="parking">
-        <label for="parking">Парковка
-          <button class="checkbox-icon"></button>
-        </label>
+        <span class="icon-checkbox"></span>
+        <label for="parking">Парковка</label>
         <input type="checkbox" id="wifi" name="wifi">
-        <label for="wifi">Wi-fi
-          <button class="checkbox-icon"></button>
-        </label>
+        <span class="icon-checkbox"></span>
+        <label for="wifi">Wi-fi</label>
       </fieldset>
       <fieldset class="housing-type float-left">
         <legend>Тип жилья:</legend>
         <input type="checkbox" id="hotel" name="hotel" checked>
-        <label for="hotel">Гостиница
-          <button class="checkbox-icon" checked></button>
-        </label>
+        <span class="icon-checkbox"></span>
+        <label for="hotel">Гостиница</label>
         <input type="checkbox" id="motel" name="motel" checked>
-        <label for="motel">Мотель
-          <button class="checkbox-icon" checked></button>
-        </label>
+        <span class="icon-checkbox"></span>
+        <label for="motel">Мотель</label>
         <input type="checkbox" id="apartments" name="apartments" checked>
-        <label for="apartments">Апартаменты
-          <button class="checkbox-icon" checked></button>
-        </label>
+        <span class="icon-checkbox"></span>
+        <label for="apartments">Апартаменты</label>
       </fieldset>
       <div class="filter-range float-right">
       <div class="filter-range-title">Стоимость в сутки (р):</div>
@@ -65,7 +60,7 @@
         <div class="range-toggle range-toggle-min"></div>
         <div class="range-toggle range-toggle-max"></div>
       </div>
-      <button class="btn-transparent" type="submit">Показать</button>
+      <a class="btn btn-transparent" href="#">Показать</a>
     </div>
     </form>
     <div class="sort clearfix">
@@ -87,8 +82,8 @@
         </ul>
       </section>
       <section class="sort-direction float-right">
-        <div class="sort-direction-asc"></div>
-        <div class="sort-direction-desc active"></div>
+        <button class="btn sort-direction-asc"><span class="icon-up-dir"></span></button>
+        <button class="btn sort-direction-desc active"><span class="icon-down-dir"></span></button>
       </section>
     </div>
     <section class="hotels">
@@ -98,13 +93,18 @@
             <div class="hotel-info float-left">
               <figure class="hotel-photo float-left"><img width="135" height="90" src="img/img_hotel_amara.jpg" alt="Hotel photo"></figure>
               <h1 class="hotel-name">Amara resort &amp; SPA</h1>
-              <span class="hotel-type">Гостница</span>
+              <span class="hotel-type">Гостиница</span>
               <span class="hotel-price">От 3500 р.</span><br>
               <a href="#" class="btn btn-details">Подробнее</a>
               <a href="#" class="btn btn-book">Забронировать</a>
             </div>
             <div class="hotel-rating float-right">
-              <div class="rating-stars"></div>
+              <ul class="rating-stars">
+                <li class="icon-star"></li>
+                <li class="icon-star"></li>
+                <li class="icon-star"></li>
+                <li class="icon-star"></li>
+              </ul>
               <div class="rating-block">Рейтинг:
                 <span class="rating-value">8,5</span>
               </div>
@@ -122,7 +122,10 @@
               <a href="#" class="btn btn-book">Забронировать</a>
             </div>
             <div class="hotel-rating float-right">
-              <div class="rating-stars"></div>
+              <ul class="rating-stars">
+                <li class="icon-star"></li>
+                <li class="icon-star"></li>
+              </ul>
               <div class="rating-block">Рейтинг:
                 <span class="rating-value">8,9</span>
               </div>
@@ -140,7 +143,11 @@
               <a href="#" class="btn btn-book">Забронировать</a>
             </div>
             <div class="hotel-rating float-right">
-              <div class="rating-stars"></div>
+              <ul class="rating-stars">
+                <li class="icon-star"></li>
+                <li class="icon-star"></li>
+                <li class="icon-star"></li>
+              </ul>
               <div class="rating-block">Рейтинг:
                 <span class="rating-value">9,2</span>
               </div>
@@ -155,13 +162,13 @@
       <b>#Visitsedona</b>
     </section>
     <section class="footer-social float-left">
-      <a class="social-btn social-btn-tw" href="#">Twitter</a>
-      <a class="social-btn social-btn-fb" href="#">Facebook</a>
-      <a class="social-btn social-btn-ytb" href="#">Youtube</a>
+      <a class="social-btn social-btn-tw" href="https://twitter.com/cityofsedonaaz"><span class="icon-twitter"></span></a>
+      <a class="social-btn social-btn-fb" href="https://www.facebook.com/places/Cem-mozno-zanatsa-v-Sedona/109433465748891/"><span class="icon-facebook"></span></a>
+      <a class="social-btn social-btn-ytb" href="https://www.youtube.com/watch?v=qhdB9UmrRWM"><span class="icon-youtube"></span></a>
     </section>
     <section class="footer-copyright float-left">
       <p>Website by</p>
-      <a href="https://htmlacademy.ru" class="logo-link"><img width="113" height="39" src="img/img_copyright.png" alt="htmlacademy.ru logo"></a>
+      <a href="https://htmlacademy.ru" class="logo-link"></a>
       </section>
   </footer>
 </body>
