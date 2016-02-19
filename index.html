@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>Седона</title>
     <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/normalize.css" type='text/css'>
-    <link rel='stylesheet' href='css/style.css' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.min.css" type='text/css'>
+    <link rel='stylesheet' href='css/style.min.css' type='text/css'>
   </head>
   <body>
     <div class="container">
@@ -16,10 +16,10 @@
             <li class="float-left"><a href="#">Фото и видео</a></li>
             <li class="float-right"><a href="hotels.html">Гостиницы</a></li>
             <li class="float-right"><a href="#">Карта штата</a></li>
-            <div class="index-logo">
-              <a href="index.html" class="link-to-main"><img width="138" height="70" src="img/img_logo.png" alt="Sedona logo"></a>
-            </div>
           </ul>
+          <div class="index-logo">
+            <a href="index.html" class="link-to-main"><img width="138" height="70" src="img/img_logo.png" alt="Sedona logo"></a>
+          </div>
         </nav>
       </header>
       <main>
@@ -41,23 +41,15 @@
           </div>
           <div class="features clearfix">
             <section class="feature housing float-left">
-              <h2>
-                <div class="feature-icon"></div>
-                Жилье
-              </h2>
+              <h2 class="feature-name">Жилье</h2>
               <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </section>
             <section class="feature food float-left">
-              <h2>
-                <div class="feature-icon"></div>
-                Еда
-              </h2>
+              <h2 class="feature-name">Еда</h2>
               <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </section>
             <section class="feature souvenirs float-left">
-              <h2>
-              <div class="feature-icon"></div>
-                Сувениры</h2>
+              <h2 class="feature-name">Сувениры</h2>
               <p>Не только китайского, но и местного производства!</p>
             </section>
           </div>
@@ -107,15 +99,15 @@
               </div>
               <div class="guest-field-container">
                 <label class="adults" for="adults">Взрослые:</label>
-              <div class="guest-number">
-                <button class="minus" type="button"><span class="icon-minus"></span></button>
-                <input type="text" size="1" id="adults" name="adults" value="2" required>
-                <button class="plus" type="button"><span class="icon-plus"></span></button>
-              </div>
+                <div class="guest-number">
+                  <button class="minus" type="button"><span class="icon-minus"></span></button>
+                  <input type="text" size="1" id="adults" name="adults" value="2" required>
+                  <button class="plus" type="button"><span class="icon-plus"></span></button>
+                </div>
               </div>
               <div class="guest-field-container">
-                  <label class="kids" for="kids">Дети:</label>
-                  <div class="guest-number">
+                <label class="kids" for="kids">Дети:</label>
+                <div class="guest-number">
                   <button class="minus" type="button"><span class="icon-minus"></span></button>
                   <input type="text" size="1" id="kids" name="kids" value="0">
                   <button class="plus" type="button"><span class="icon-plus"></span></button>
@@ -124,6 +116,7 @@
               <button class="btn find-hotel" type="submit">Найти</button>
             </div>
           </form>
+        </div>
         <figure id="map" class="map"></figure>
         <img src="img/img_map.jpg" id="mapImage" alt="Google map">
       </main>
@@ -143,6 +136,6 @@
       </footer>
     </div>
     <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
