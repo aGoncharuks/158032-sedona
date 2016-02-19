@@ -2,6 +2,7 @@
 function initMap() {
   var coordinates = {lat: 34.869633, lng: -111.755049};
   var mapFigure = document.getElementById('map');
+  mapFigure.style.height = '593px';
   var map = new google.maps.Map(mapFigure, {
     center: coordinates,
     zoom: 12
@@ -13,18 +14,19 @@ function initMap() {
   });
 }
 
-window.onload = function () {
-  var foundGoogle, img;
-  foundGoogle = typeof google === 'object' && typeof google.maps === 'object';
-  if (foundGoogle) {
-    img = document.getElementById('mapImage');
+//Hiding map image if Google map is loaded
+window.onload = function() {
+  var foundGoogle = typeof google === 'object' && typeof google.maps === 'object';
+  var  mapFigure = document.getElementById('map');
+  if (foundGoogle && mapFigure.firstChild) {
+    var img = document.getElementById('mapImage');
     img.classList.add('is-hidden');
   } else {
-    map = document.getElementById('map');
-    map.classList.add('is-hidden');
+     mapFigure.classList.add('is-hidden');
   }
 }
 
+//Hotel search form opening
 var searchButton = document.getElementById('hotel-search');
 var searchForm = document.getElementById('hotelSearchForm');
 searchButton.addEventListener('click', function(event) {
