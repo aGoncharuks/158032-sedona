@@ -111,9 +111,14 @@ body {
   min-width: 768px;
   max-width: 1200px;
   box-shadow: 0px 0px 20px 40px #e1e1e1;
+  background: #ffffff;
 }
 
 /*module*/
+.main-header {
+  background: #ffffff;
+}
+
 .main-menu ul {
   margin: 0;
   padding: 0 6%;
@@ -180,6 +185,7 @@ body {
   display: block;
   margin: 0 auto;
 }
+
 .promo {
   text-align: center;
   position: relative;
@@ -189,6 +195,7 @@ body {
 .promo-header  {
   width: 576px;
   margin: auto;
+  background: #ffffff;
 }
 
 .promo-header h1 {
@@ -252,6 +259,10 @@ body {
   width: 100%;
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.features {
+  background: #ffffff;
 }
 
 .feature {
@@ -735,6 +746,10 @@ input:disabled + .icon-checkbox::before {
   margin: 0;
 }
 
+.hotels {
+  background-color: #ffffff;
+}
+
 .hotels ul {
   list-style: none;
   margin: 0;
@@ -823,6 +838,10 @@ input:disabled + .icon-checkbox::before {
   display: inline-block;
   background: #F2F2F2;
   padding: 3px 13px 3px 15px;
+}
+
+.main-footer {
+  background: #ffffff;
 }
 
 .main-footer section {
@@ -934,7 +953,8 @@ color: #81b3d2;
 
 .js-fallback {
   position: static;
-  padding-top: 10px;
+  padding: 10px 0;
+  box-shadow: inset 0 0 0 2px #e5e5e5;
 }
 
 .find-hotel:hover {
