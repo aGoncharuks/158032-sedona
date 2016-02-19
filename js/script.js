@@ -11,17 +11,23 @@ function initMap() {
    map: map,
    title: 'Sedona'
   });
-};
+}
 
 window.onload = function () {
   var foundGoogle, img;
   foundGoogle = typeof google === 'object' && typeof google.maps === 'object';
   if (foundGoogle) {
-    document.getElementById('mapImage').classList.add('is-hidden');
+    img = document.getElementById('mapImage');
+    img.classList.add('is-hidden');
+  } else {
+    map = document.getElementById('map');
+    map.classList.add('is-hidden');
   }
 }
 
-function hotelSearchForm() {
-  var searchForm = document.getElementById('hotelSearchForm');
-  searchForm.classList.toggle('is-hidden');
-}
+var searchButton = document.getElementById('hotel-search');
+var searchForm = document.getElementById('hotelSearchForm');
+searchButton.addEventListener('click', function(event) {
+  event.preventDefault();
+  searchForm.classList.toggle('form-open');
+});

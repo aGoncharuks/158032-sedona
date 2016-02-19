@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Седона</title>
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css" type='text/css'>
+    <link rel='stylesheet' href='css/style.css' type='text/css'>
+  </head>
+  <body>
+    <div class="container">
+      <header class="main-header clearfix">
+        <nav class="main-menu clearfix">
+          <ul>
+            <li class="float-left"><a href="#">Информация</a></li>
+            <li class="float-left"><a href="#">Фото и видео</a></li>
+            <li class="float-right"><a href="hotels.html">Гостиницы</a></li>
+            <li class="float-right"><a href="#">Карта штата</a></li>
+            <div class="index-logo">
+              <a href="index.html" class="link-to-main"><img width="138" height="70" src="img/img_logo.png" alt="Sedona logo"></a>
+            </div>
+          </ul>
+        </nav>
+      </header>
+      <main>
+          <form class="hotel-search-form js-fallback">
+            <div class="hotel-search-container">
+              <div class="date-field-container">
+                <label for="arrival">Дата заезда:</label>
+                <input type="text" id="arrival" name="arrival" value="24 апреля 2016">
+                <a class="btn open-calendar" href="#"><span class="icon-calendar"></span></a>
+              </div>
+              <div class="date-field-container">
+                <label for="departure">Дата выезда:</label>
+                <input id="departure" name="departure" value="4 июля 2016">
+                <a class="btn open-calendar" href="#"><span class="icon-calendar"></span></a>
+              </div>
+              <div class="guest-field-container">
+                <label class="adults" for="adults">Взрослые:</label>
+              <div class="guest-number">
+                <button class="minus" type="button"><span class="icon-minus"></span></button>
+                <input type="text" size="1" id="adults" name="adults" value="2">
+                <button class="plus" type="button"><span class="icon-plus"></span></button>
+              </div>
+              </div>
+              <div class="guest-field-container">
+                  <label class="kids" for="kids">Дети:</label>
+                  <div class="guest-number">
+                  <button class="minus" type="button"><span class="icon-minus"></span></button>
+                  <input type="text" size="1" id="kids" name="kids" value="0">
+                  <button class="plus" type="button"><span class="icon-plus"></span></button>
+                </div>
+              </div>
+              <button class="btn find-hotel" type="submit">Найти</button>
+            </div>
+          </form>
+      </main>
+      <footer class="main-footer clearfix">
+        <section class="footer-hashtag float-left">
+          <b>#Visitsedona</b>
+        </section>
+        <section class="footer-social float-left">
+          <a class="social-btn social-btn-tw" href="https://twitter.com/cityofsedonaaz"><span class="icon-twitter"></span></a>
+          <a class="social-btn social-btn-fb" href="https://www.facebook.com/places/Cem-mozno-zanatsa-v-Sedona/109433465748891/"><span class="icon-facebook"></span></a>
+          <a class="social-btn social-btn-ytb" href="https://www.youtube.com/watch?v=qhdB9UmrRWM"><span class="icon-youtube"></span></a>
+        </section>
+        <section class="footer-copyright float-left">
+          <p>Website by</p>
+          <a href="https://htmlacademy.ru" class="logo-link"></a>
+          </section>
+      </footer>
+    </div>
+  </body>
+</html>
