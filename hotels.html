@@ -9,60 +9,62 @@
 </head>
 <body>
   <div class="container">
-    <header class="main-header clearfix">
-      <nav class="main-menu clearfix">
-        <ul>
+    <header class="main-header">
+      <nav class="main-menu">
+        <ul class="clearfix">
           <li class="float-left"><a href="#">Информация</a></li>
           <li class="float-left"><a href="#">Фото и видео</a></li>
           <li class="float-left"><a href="#">Карта штата</a></li>
           <li class="float-left"><a href="hotels.html" class="active">Гостиницы</a></li>
         </ul>
-          <a href="index.html" class="index-logo link-to-main"><img width="138" height="70" src="img/img_logo.png" alt="Sedona logo"></a>
+        <a href="index.html" class="index-logo"><img width="138" height="70" src="img/img_logo.png" alt="Sedona logo"></a>
       </nav>
     </header>
     <main>
       <form class="filter-form clearfix" action="#" method="post">
-        <fieldset class="infrastructure-features float-left">
-          <legend>Инфраструктура:</legend>
-          <input type="checkbox" id="pool" name="pool" checked>
-          <label for="pool" class="icon-checkbox">Бассейн</label>
-          <input type="checkbox" id="parking" name="parking">
-          <label for="parking" class="icon-checkbox">Парковка</label>
-          <input type="checkbox" id="wifi" name="wifi">
-          <label for="wifi" class="icon-checkbox">Wi-fi</label>
-        </fieldset>
-        <fieldset class="housing-type float-left">
-          <legend>Тип жилья:</legend>
-          <input type="checkbox" id="hotel" name="hotel" checked>
-          <label for="hotel" class="icon-checkbox">Гостиница</label>
-          <input type="checkbox" id="motel" name="motel" checked>
-          <label for="motel" class="icon-checkbox">Мотель</label>
-          <input type="checkbox" id="apartments" name="apartments" disabled>
-          <label for="apartments" class="icon-checkbox">Апартаменты</label>
-        </fieldset>
+        <div class="filters-group float-left">
+          <fieldset class="infrastructure-features float-left">
+            <legend>Инфраструктура:</legend>
+            <input type="checkbox" id="pool" name="pool" checked>
+            <label for="pool" class="icon-checkbox">Бассейн</label>
+            <input type="checkbox" id="parking" name="parking">
+            <label for="parking" class="icon-checkbox">Парковка</label>
+            <input type="checkbox" id="wifi" name="wifi">
+            <label for="wifi" class="icon-checkbox">Wi-fi</label>
+          </fieldset>
+          <fieldset class="housing-type float-left">
+            <legend>Тип жилья:</legend>
+            <input type="checkbox" id="hotel" name="hotel" checked>
+            <label for="hotel" class="icon-checkbox">Гостиница</label>
+            <input type="checkbox" id="motel" name="motel" checked>
+            <label for="motel" class="icon-checkbox">Мотель</label>
+            <input type="checkbox" id="apartments" name="apartments" disabled>
+            <label for="apartments" class="icon-checkbox">Апартаменты</label>
+          </fieldset>
+        </div>
         <div class="filter-range float-right">
-        <div class="filter-range-title">Стоимость в сутки (р):</div>
-        <div class="price-controls">
-          <label class="min-price">от <input type="text" name="min-price" value="0"></label>
-          <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
-        </div>
-        <div class="range-controls">
-          <div class="scale">
-            <div class="bar"></div>
+          <div class="filter-range-title">Стоимость в сутки (р):</div>
+          <div class="price-controls">
+            <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+            <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
           </div>
-          <div class="range-toggle range-toggle-min"></div>
-          <div class="range-toggle range-toggle-max"></div>
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="range-toggle range-toggle-min"></div>
+            <div class="range-toggle range-toggle-max"></div>
+          </div>
+          <button class="btn btn-transparent" type="submit">Показать</button>
         </div>
-        <button class="btn btn-transparent" type="submit">Показать</button>
-      </div>
       </form>
       <div class="sort clearfix">
-        <section class="sort-type inline-block">
+        <section class="sort-type">
           <p class="sort-elements">Найдено:
             <span class="sort-elements-count">3</span>
           </p>
           <span class="sorting">Сортировка:</span>
-          <ul class="sort-by inline-block">
+          <ul class="sort-by">
             <li>
               <a class="sort-by-price active" href="#">По цене</a>
             </li>

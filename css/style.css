@@ -87,18 +87,12 @@ html {
   float: right;
 }
 
-.inline-block {
-  display: inline-block;
-  vertical-align: top;
-}
-
 .btn {
   display: inline-block;
   border: none;
   font-weight: bold;
   cursor: pointer;
   text-align: center;
-  vertical-align: top;
   vertical-align: top;
   text-decoration: none;
   outline: none;
@@ -163,8 +157,9 @@ body {
 
 .main-menu li {
   display: block;
-  padding: 13px 0;
+  padding: 14px 0 13px;
 }
+
 
 .main-menu li:nth-child(1),
 .main-menu li:nth-child(2) {
@@ -190,6 +185,7 @@ body {
 
 .index-logo {
   position: absolute;
+  top: 0;
   right: 0;
   left: 0;
   display: block;
@@ -526,32 +522,36 @@ body {
 }
 
 .filter-form {
+  padding-top: 28px;
+  padding-right: 6%;
+  padding-bottom: 5px;
+  padding-left: 6%;
   background: #81b3d2 url("../img/bg_mountains_blurred.jpg");
   background-position: center;
   background-size: cover;
 }
 
-.filter-form fieldset {
+.filters-group {
+  float: left;
+  width: 66.6666%;
+}
+
+.filters-group > fieldset {
   position: relative;
-  width: 148px;
+  width: 36.2333%;
+  min-width: 211px;
   margin: 0;
   padding: 0;
-  border: none;
-  text-align: left;
+  padding-right: 10px;
+  border: 0;
   color: #ffffff;
 }
 
-.filter-form .infrastructure-features {
-  margin: 26px 0 0 6%;
+.filters-group > fieldset:first-of-type {
+  min-width: 239px;
 }
-
-.filter-form .housing-type {
-  margin: 26px 0 0 6%;
-  padding-left: 3%;
-}
-
-.filter-form legend {
-  margin-bottom: 26px;
+.filters-group > fieldset:last-of-type {
+  min-width: 211px;
 }
 
 .infrastructure-features input,
@@ -564,26 +564,28 @@ body {
 .infrastructure-features label,
 .housing-type label {
   position: relative;
-  display: inline-block;
-  width: 60px;
-  margin: 0 35px 25px 38px;
+  display: block;
+  margin: 0;
+  margin-bottom: 25px;
+  margin-bottom: 25px;
+  padding-left: 38px;
   cursor: pointer;
   vertical-align: top;
 }
 
-input + .icon-checkbox::before {
-  position: absolute;
-  left: -40px;
-  margin: 0;
-  content: "\2610";
-  font-size: 26px;
-}
-
 input:checked + .icon-checkbox::before {
   position: absolute;
-  left: -38px;
+  left: 0;
   margin: 0;
   content: "\2611";
+  font-size: 26px;
+}
+input + .icon-checkbox::before {
+  position: absolute;
+  top: -3px;
+  left: -2px;
+  margin: 0;
+  content: "\2610";
   font-size: 26px;
 }
 
@@ -592,6 +594,7 @@ input:disabled + .icon-checkbox::before {
 }
 
 .filter-form legend {
+  margin-bottom: 26px;
   font-size: 16px;
   font-weight: bold;
   line-height: 21px;
@@ -599,29 +602,43 @@ input:disabled + .icon-checkbox::before {
 }
 
 .filter-range {
-  box-sizing: content-box;
-  max-width: 320px;
-  margin-top: 27px;
-  margin-right: 6%;
-  padding-bottom: 34px;
-  text-transform: uppercase;
+  position: relative;
+  width: 36.2333%;
+  width: 33.3333%;
+  min-width: 211px;
+  min-width: 225px;
+  max-width: 328px;
+  margin: 0;
+  padding: 0;
+  padding-top: 46px;
+  padding-top: 31px;
+  border: 0;
+  text-align: right;
   color: #ffffff;
 }
 
 .filter-range-title {
-  margin-bottom: 9px;
-  margin-left: -10px;
+  position: absolute;
+  top: 0;
+  left: -1px;
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 21px;
+  text-transform: uppercase;
 }
 
 .price-controls {
   position: relative;
-  height: 36px;
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 32px;
   margin-bottom: 20px;
   border: 2px solid #ffffff;
-  font-size: 0;
+  text-align: center;
   border-radius: 2px;
 }
 
@@ -633,30 +650,33 @@ input:disabled + .icon-checkbox::before {
   height: 22px;
   content: "";
   transform: translate(-50%, -50%);
-  background: #ffffff;
+  background-color: #ffffff;
 }
 
 .price-controls label {
   display: inline-block;
+  box-sizing: border-box;
+  width: 50%;
+  margin-top: -1px;
+  margin-right: -2px;
+  padding-left: 15%;
   font-size: 14px;
-  line-height: 34px;
+  line-height: 32px;
   cursor: pointer;
   vertical-align: top;
 }
 
-.price-controls .min-price,
 .price-controls .max-price {
-  box-sizing: content-box;
-  width: 94px;
-  padding-left: 63px;
+  padding-left: 11%;
 }
 
 .price-controls input {
-  width: 50px;
+  width: 50%;
   margin: 0;
-  padding: 0;
   border: none;
   font: inherit;
+  cursor: pointer;
+  text-transform: inherit;
   color: inherit;
   outline: none;
   background: none;
@@ -729,7 +749,7 @@ input:disabled + .icon-checkbox::before {
   display: inline-block;
   margin: 0;
   margin-right: 45px;
-  padding: 27px 0;
+  padding: 28px 0 29px;
   font-size: 21px;
   font-weight: bold;
   line-height: 27px;
@@ -738,15 +758,22 @@ input:disabled + .icon-checkbox::before {
 
 .sorting {
   display: inline-block;
-  padding-top: 33px;
+  padding-top: 35px;
   vertical-align: top;
 }
 
-.sort-type ul {
+.sort-type {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.sort-by {
+  display: inline-block;
   margin: 0;
   margin-left: 33px;
   padding: 0;
-  padding-top: 33px;
+  padding-top: 35px;
+  vertical-align: top;
 }
 
 .sort-by li {
@@ -865,6 +892,7 @@ input:disabled + .icon-checkbox::before {
 .rating-block {
   display: inline-block;
   padding: 3px 13px 3px 15px;
+  vertical-align: top;
   background: #f2f2f2;
 }
 
@@ -884,7 +912,7 @@ input:disabled + .icon-checkbox::before {
 }
 
 .footer-social {
-  margin-top: 36px;
+  padding: 36px 0;
 }
 
 .social-btn {
@@ -912,7 +940,7 @@ input:disabled + .icon-checkbox::before {
 }
 
 .footer-copyright {
-  margin-top: 41px;
+  padding: 41px 0;
 }
 
 .footer-copyright p {

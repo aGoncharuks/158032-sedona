@@ -9,49 +9,49 @@
   </head>
   <body>
     <div class="container">
-      <header class="main-header clearfix">
-        <nav class="main-menu clearfix">
-          <ul>
+      <header class="main-header">
+        <nav class="main-menu">
+          <ul class="clearfix">
             <li class="float-left"><a href="#">Информация</a></li>
             <li class="float-left"><a href="#">Фото и видео</a></li>
             <li class="float-left"><a href="#">Карта штата</a></li>
             <li class="float-left"><a href="hotels.html">Гостиницы</a></li>
           </ul>
-            <a href="index.html" class="index-logo link-to-main"><img width="138" height="70" src="img/img_logo.png" alt="Sedona logo"></a>
+          <a href="index.html" class="index-logo"><img width="138" height="70" src="img/img_logo.png" alt="Sedona logo"></a>
         </nav>
       </header>
       <main>
-          <form class="hotel-search-form js-fallback">
-            <div class="hotel-search-container">
-              <div class="date-field-container">
-                <label for="arrival">Дата заезда:</label>
-                <input type="text" id="arrival" name="arrival" value="24 апреля 2016" required>
-                <a class="btn open-calendar" href="#"><span class="icon-calendar"></span></a>
-              </div>
-              <div class="date-field-container">
-                <label for="departure">Дата выезда:</label>
-                <input id="departure" name="departure" value="4 июля 2016" required>
-                <a class="btn open-calendar" href="#"><span class="icon-calendar"></span></a>
-              </div>
-              <div class="guest-field-container">
-                <label class="adults" for="adults">Взрослые:</label>
+        <form class="hotel-search-form js-fallback">
+          <div class="hotel-search-container">
+            <div class="date-field-container">
+              <label for="arrival">Дата заезда:</label>
+              <input type="text" id="arrival" name="arrival" value="24 апреля 2016" required>
+              <a class="btn open-calendar" href="#"><span class="icon-calendar"></span></a>
+            </div>
+            <div class="date-field-container">
+              <label for="departure">Дата выезда:</label>
+              <input id="departure" name="departure" value="4 июля 2016" required>
+              <a class="btn open-calendar" href="#"><span class="icon-calendar"></span></a>
+            </div>
+            <div class="guest-field-container">
+              <label class="adults" for="adults">Взрослые:</label>
               <div class="guest-number">
                 <button class="minus" type="button"><span class="icon-minus"></span></button>
                 <input type="text" size="1" id="adults" name="adults" value="2" required>
                 <button class="plus" type="button"><span class="icon-plus"></span></button>
               </div>
-              </div>
-              <div class="guest-field-container">
-                  <label class="kids" for="kids">Дети:</label>
-                  <div class="guest-number">
-                  <button class="minus" type="button"><span class="icon-minus"></span></button>
-                  <input type="text" size="1" id="kids" name="kids" value="0">
-                  <button class="plus" type="button"><span class="icon-plus"></span></button>
-                </div>
-              </div>
-              <button class="btn find-hotel" type="submit">Найти</button>
             </div>
-          </form>
+            <div class="guest-field-container">
+              <label class="kids" for="kids">Дети:</label>
+              <div class="guest-number">
+                <button class="minus" type="button"><span class="icon-minus"></span></button>
+                <input type="text" size="1" id="kids" name="kids" value="0">
+                <button class="plus" type="button"><span class="icon-plus"></span></button>
+              </div>
+            </div>
+            <button class="btn find-hotel" type="submit">Найти</button>
+          </div>
+        </form>
       </main>
       <footer class="main-footer clearfix">
         <section class="footer-hashtag float-left">
